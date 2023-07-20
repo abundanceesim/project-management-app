@@ -11,9 +11,33 @@ const ClientType = new GraphQLObjectType({
     })
 })
 
+const ProjectType = new GraphQLObjectType({
+  name: "Project",
+  fields: () => ({
+    id: { type: GraphQLID },
+    name: { type: GraphQLString },
+    description: { type: GraphQLString },
+    status: { type: GraphQLString },
+  }),
+});
+
 const RootQuery = new GraphQLObjectType({
     name: 'RootQueryType',
     fields: {
+        projects: {
+            type: GraphQLList(ProjectType), //querying a List of projects
+            resolve(parent, args){
+                return projects
+            }
+        },
+        project: {
+            type: ProjectType, //get client by id
+            args: { id: {type: GraphQLID} }, //add the args you'd be passing in with the query
+            resolve(parentValue, args){
+                // resolve determines what would be returned, as well as args
+                return projects.find(project => project.id === args.id)
+            }
+        },
         clients: {
             type: GraphQLList(ClientType), //querying a List of clients
             resolve(parent, args){
