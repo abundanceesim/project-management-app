@@ -2,24 +2,14 @@ import {gql, useQuery} from '@apollo/client'
 // gql is used to make the queries, but useQuery is used to 
 // use the query and get the data, states etc
 import ClientRow from './ClientRow';
-
-// gql variables are written in upper case by convention
-const GET_CLIENTS = gql`
-    query getClients {
-        clients {
-            id
-            name
-            email
-            phone
-        }
-    }
-`
+import { GET_CLIENTS } from '../queries/clientQueries';
+import Spinner from './Spinner';
 
 export default function Clients() {
 //   destructure for application state after query is executed
   const { loading, error, data } = useQuery(GET_CLIENTS);
 
-  if (loading) return <p>Loading...</p>
+  if (loading) return <Spinner/>
   if (error) return <p>Something Went Wrong</p>
 
   return (
