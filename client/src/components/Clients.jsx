@@ -1,4 +1,5 @@
-import {gql, useQuery} from '@apollo/client'
+// import {gql, useQuery} from '@apollo/client'
+import { useQuery } from "@apollo/client";
 // gql is used to make the queries, but useQuery is used to 
 // use the query and get the data, states etc
 import ClientRow from './ClientRow';
