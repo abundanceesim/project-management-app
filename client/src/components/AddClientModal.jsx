@@ -41,7 +41,7 @@ export default function AddClientModal() {
     <>
       <button
         type="button"
-        className="btn btn-secondary"
+        className="btn btn-dark"
         data-bs-toggle="modal"
         data-bs-target="#addClientModal"
       >
@@ -105,8 +105,7 @@ export default function AddClientModal() {
                   />
                 </div>
                 {/*data-bs-dismiss attribute closes the modal*/}
-                    <button type='submit' data-bs-dismiss="modal" onClick={onSubmit} className="btn btn-secondary">Submit</button>
-                
+                <button type='submit' data-bs-dismiss="modal" onClick={onSubmit} className="btn btn-dark">Submit</button>
               </form>
             </div>
           </div>

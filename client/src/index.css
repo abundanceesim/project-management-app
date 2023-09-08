@@ -7,17 +7,32 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.modal-container {
+  overflow: hidden;
+}
+
+.modals {
+  float: right;
+}
+
+.no-projects {
+  background-color: rgba(235, 235, 235, 0.61);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 .navbar-brand {
+  padding: 14px 0px;
   color: #df3ca6;
+  font-size: 21px;
+  font-weight: 600;
 }
 
 .navbar-brand img {
-  width: 30px;
+  width: 32px;
   margin-right: 10px;
 }
 

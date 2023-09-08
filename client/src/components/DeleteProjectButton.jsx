@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { FaTrash } from 'react-icons/fa'
+import { FaTrashAlt } from 'react-icons/fa'
 import { GET_PROJECTS } from '../queries/projectQueries'
 import { DELETE_PROJECT } from '../mutations/projectMutations'
 import { useMutation } from '@apollo/client'
@@ -15,9 +15,9 @@ export default function DeleteProjectButton({ projectId }) {
   });
 
 
-  return <div className="d-flex mt-5 ms-auto">
+  return <div className="d-flex  ms-auto ">
         <button className='btn btn-danger' onClick={deleteProject}>
-            <FaTrash className='icon' /> Delete Project
+            <FaTrashAlt className='icon' /> Delete Project
         </button>
     </div>
 }

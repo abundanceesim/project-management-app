@@ -9,15 +9,17 @@ export default function Projects() {
   if (loading) return <Spinner/>
   if (error) return <p>Something Went Wrong</p>
 
+  const emptyProject = ''
+
   return (
     <>
         {data.projects.length > 0 ? (
-            <div className="row mt-4">
+            <div className="row mt-4 ">
                 { data.projects.map((project) => (
                     <ProjectCard key={project.id} project={project}/>
                 )) }
             </div>
-        ): (<p>No Projects</p>)}
+        ): (<div className="row mt-4 mb-3"><ProjectCard project={emptyProject}/></div>)}
     </>
   )
 }

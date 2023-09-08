@@ -1,4 +1,4 @@
-import { FaTrash } from 'react-icons/fa'
+import { FaTrashAlt } from 'react-icons/fa'
 import { useMutation } from '@apollo/client'
 import { DELETE_CLIENT } from '../mutations/clientMutation';
 import { GET_CLIENTS } from '../queries/clientQueries';
@@ -24,7 +24,7 @@ function ClientRow({ client }) {
       <td>{client.phone}</td>
       <td>
         <button className='btn btn-danger btn-sm' onClick={deleteClient}>
-            <FaTrash />
+            <FaTrashAlt />
         </button>
       </td>
     </tr>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaList } from "react-icons/fa";
+import { FaPlus } from "react-icons/fa";
 import { useMutation, useQuery } from "@apollo/client";
 import { ADD_PROJECT } from "../mutations/projectMutations";
 import { GET_PROJECTS } from "../queries/projectQueries";
@@ -28,7 +28,7 @@ export default function AddProjectModal() {
   const onSubmit = (e) => {
     e.preventDefault();
 
-    if (name === "" || description === "" || status === "") {
+    if (name === "" || description === "" || status === "" || clientId === "") {
       return alert("Please fill in all fields");
     }
 
@@ -54,7 +54,7 @@ export default function AddProjectModal() {
             data-bs-target="#addProjectModal"
           >
             <div className="d-flex align-items-center">
-              <FaList className="icon" />
+              <FaPlus className="icon" />
               <div>New Project</div>
             </div>
           </button>
@@ -129,7 +129,6 @@ export default function AddProjectModal() {
                         ))}
                       </select>
                     </div>
-
                     <button
                       type="submit"
                       data-bs-dismiss="modal"
