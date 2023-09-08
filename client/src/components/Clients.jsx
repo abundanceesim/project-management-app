@@ -17,12 +17,12 @@ export default function Clients() {
     <>
       {!loading && !error && (
         <table className="table table-hover mt-3">
-          <thead>
+          <thead className="table-dark">
             <tr>
               <th>Name</th>
               <th>Email</th>
               <th>Phone</th>
-              <th></th>
+              <th style={{width: "10%"}}></th>
             </tr>
           </thead>
           <tbody> {/*pass in the client as a prop*/}

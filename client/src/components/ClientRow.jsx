@@ -23,8 +23,12 @@ function ClientRow({ client }) {
       <td>{client.email}</td>
       <td>{client.phone}</td>
       <td>
-        <button className='btn btn-danger btn-sm' onClick={deleteClient}>
+        <button className="btn btn-danger" onClick={deleteClient}>
+          <div className="d-flex gap-2 align-items-center ">
+            {" "}
+            Remove
             <FaTrashAlt />
+          </div>
         </button>
       </td>
     </tr>
