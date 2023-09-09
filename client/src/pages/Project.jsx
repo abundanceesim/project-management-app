@@ -28,20 +28,20 @@ export default function Project() {
           <h5>Project Details</h5>
           <div className="card">
             <div className="card-body">
-              <div className="card">
-                <div className="card-body project-card">
+              <div className="card card-small" >
+                <div className="card-body project-card card-small">
                   <h6>Name</h6>
                   <p>{data.project.name}</p>
                 </div>
               </div>
-              <div className="card mt-3">
-                <div className="card-body project-card">
+              <div className="card mt-3 card-small">
+                <div className="card-body project-card card-small">
                   <h6>Description</h6>
                   <p>{data.project.description}</p>
                 </div>
               </div>
-              <div className="card mt-3">
-                <div className="card-body project-card">
+              <div className="card mt-3 card-small">
+                <div className="card-body project-card card-small">
                   <h6>Status</h6>
                   <p>{data.project.status}</p>
                 </div>

@@ -37,6 +37,10 @@ body {
   background-color: #df3ca6 !important;
 }
 
+.card-small {
+  height: 86px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
