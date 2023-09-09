@@ -19,7 +19,7 @@ export default function Project() {
     <>
       {!loading && !error && (
         <div className="mx-auto w-75 card p-4 mt-4">
-          <Link to="/" className="btn btn-light btn-sm w-auto d-inline ms-auto">
+          <Link to="/" className="btn btn-dark btn-sm w-auto d-inline ms-auto">
             <div className="d-flex justify-content-center align-items-center">
               <FaArrowLeft className="icon" /> Home
             </div>
@@ -28,13 +28,26 @@ export default function Project() {
           <h5>Project Details</h5>
           <div className="card">
             <div className="card-body">
-              <h6>Name:</h6>
-              <p>{data.project.name}</p>
-              <h6>Description:</h6>
-              <p>{data.project.description}</p>
-              <h6>Status:</h6>
-              <p>{data.project.status}</p>
-              <div className="modal-container">
+              <div className="card">
+                <div className="card-body project-card">
+                  <h6>Name</h6>
+                  <p>{data.project.name}</p>
+                </div>
+              </div>
+              <div className="card mt-3">
+                <div className="card-body project-card">
+                  <h6>Description</h6>
+                  <p>{data.project.description}</p>
+                </div>
+              </div>
+              <div className="card mt-3">
+                <div className="card-body project-card">
+                  <h6>Status</h6>
+                  <p>{data.project.status}</p>
+                </div>
+              </div>
+
+              <div className="modal-container mt-2">
                 <div className="modals">
                   <DeleteProjectButton projectId={data.project.id} />
                 </div>

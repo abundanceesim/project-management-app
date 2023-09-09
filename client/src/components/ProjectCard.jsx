@@ -5,8 +5,7 @@ export default function ProjectCard({ project }) {
       {project.name ? (
         <div className="col-md-6">
           <div
-            className="card mb-3"
-            style={{ backgroundColor: "rgba(243, 243, 243, 0.61)" }}
+            className="card mb-3 project-card"
           >
             <div className="card-body">
               <div className="d-flex justify-content-between align-items-center">

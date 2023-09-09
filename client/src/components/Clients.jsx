@@ -16,18 +16,21 @@ export default function Clients() {
   return (
     <>
       {!loading && !error && (
-        <table className="table table-hover mt-3">
+        <table className="table table-secondary table-hover 
+          mt-3 rounded rounded-1 overflow-hidden table-bordered">
           <thead className="table-dark">
             <tr>
               <th>Name</th>
               <th>Email</th>
               <th>Phone</th>
-              <th style={{width: "10%"}}></th>
+              <th style={{ width: "10%" }}></th>
             </tr>
           </thead>
-          <tbody> {/*pass in the client as a prop*/}
-            {data.clients.map(client => (
-                <ClientRow key={client.id} client={client}/>
+          <tbody>
+            {" "}
+            {/*pass in the client as a prop*/}
+            {data.clients.map((client) => (
+              <ClientRow key={client.id} client={client} />
             ))}
           </tbody>
         </table>

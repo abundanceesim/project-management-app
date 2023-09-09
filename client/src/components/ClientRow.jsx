@@ -1,4 +1,4 @@
-import { FaTrashAlt } from 'react-icons/fa'
+import { FaUserTimes } from 'react-icons/fa'
 import { useMutation } from '@apollo/client'
 import { DELETE_CLIENT } from '../mutations/clientMutation';
 import { GET_CLIENTS } from '../queries/clientQueries';
@@ -27,7 +27,7 @@ function ClientRow({ client }) {
           <div className="d-flex gap-2 align-items-center ">
             {" "}
             Remove
-            <FaTrashAlt />
+            <FaUserTimes />
           </div>
         </button>
       </td>

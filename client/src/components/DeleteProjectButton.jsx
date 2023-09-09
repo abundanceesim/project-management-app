@@ -15,9 +15,11 @@ export default function DeleteProjectButton({ projectId }) {
   });
 
 
-  return <div className="d-flex  ms-auto ">
-        <button className='btn btn-danger' onClick={deleteProject}>
-            <FaTrashAlt className='icon' /> Delete Project
-        </button>
-    </div>
+  return (
+      <button className="btn btn-danger" onClick={deleteProject}>
+        <div className="d-flex  ms-auto  align-items-center">
+          <FaTrashAlt className="icon" /> Delete
+        </div>
+      </button>
+  );
 }

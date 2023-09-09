@@ -71,10 +71,14 @@ export default function EditProjectForm({ project }) {
               <option value="completed">Completed</option>
             </select>
           </div>
-
-          <button type="submit" onClick={onSubmit} className="btn btn-primary">
+          <div className="modal-container mt-2">
+            <div className="modals">
+              <button type="submit" onClick={onSubmit} className="btn btn-outline-primary">
             SUBMIT
           </button>
+            </div>
+          </div>
+          
         </form>
       </div>
     </div>

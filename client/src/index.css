@@ -19,13 +19,31 @@ body {
   background-color: rgba(235, 235, 235, 0.61);
 }
 
+.project-card {
+  background-color: rgba(243, 243, 243, 0.61);
+}
+
+.table-secondary {
+  --bs-table-bg: rgba(243, 243, 243, 0.61);
+}
+
+.btn-outline-primary {
+  color: #df3ca6 !important;
+  border: solid 1px #df3ca6 !important;
+}
+
+.btn-outline-primary:hover {
+  color: white !important;
+  background-color: #df3ca6 !important;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 .navbar-brand {
-  padding: 14px 0px;
+  padding: 18px 0px;
   color: #df3ca6;
   font-size: 21px;
   font-weight: 600;
