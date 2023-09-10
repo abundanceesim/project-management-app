@@ -1,2 +1,2 @@
 # project-management-app
-MERN stack project management application.
+Small-scale MERN stack application for performing basic project management operations 
