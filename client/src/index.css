@@ -41,6 +41,10 @@ body {
   height: 86px;
 }
 
+.not-found {
+  height: 50vh;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

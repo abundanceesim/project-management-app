@@ -1,4 +1,4 @@
-import { FaMinusCircle, FaRegClock, FaRegCheckCircle} from 'react-icons/fa'
+import { FaMinusCircle, FaClock, FaCheckCircle} from 'react-icons/fa'
 export default function ProjectCard({ project }) {
   return (
     <>
@@ -19,21 +19,11 @@ export default function ProjectCard({ project }) {
                       case "Not Started":
                         return <FaMinusCircle style={{ color:"red", marginBottom: "2px"}}/>;
                       case "In Progress":
-                        return (
-                          <FaRegClock
-                            style={{ color: "#656e69", marginBottom: "2px" }}
-                          />
-                        );
+                        return <FaClock style={{ color: "#656e69", marginBottom: "2px" }} />;
                       case "Completed":
-                        return (
-                          <FaRegCheckCircle
-                            style={{ color: "#05ed43", marginBottom: "2px" }}
-                          />
-                        );
+                        return  <FaCheckCircle style={{ color: "#05ed43", marginBottom: "2px" }} />;
                       default:
-                        return (
-                          <FaMinusCircle style={{ marginBottom: "2px" }} />
-                        );
+                        return <FaMinusCircle style={{ marginBottom: "2px" }} />;
                     }
                   })()}
               </p>
