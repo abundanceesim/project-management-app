@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useMutation } from "@apollo/client";
 import { GET_PROJECT } from "../queries/projectQueries";
 import { UPDATE_PROJECT } from "../mutations/projectMutations";
+import { useNavigate } from "react-router-dom";
 
 export default function EditProjectForm({ project }) {
   const [name, setName] = useState(project.name);
@@ -19,6 +20,8 @@ export default function EditProjectForm({ project }) {
     }
   });
 
+  const navigate = useNavigate()
+
   const [updateProject] = useMutation(UPDATE_PROJECT, {
     variables: { id: project.id, name, description, status },
     refetchQueries: [{ query: GET_PROJECT, variables: { id: project.id } }],
@@ -32,6 +35,7 @@ export default function EditProjectForm({ project }) {
     }
 
     updateProject(name, description, status);
+    navigate("/");
   };
 
   return (
