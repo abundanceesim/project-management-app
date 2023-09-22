@@ -11,6 +11,10 @@ body {
   -moz-osx-font-smoothing: grayscale; */
 }
 
+.header {
+  font-weight: 600 !important;
+}
+
 .modal-container {
   overflow: hidden;
 }

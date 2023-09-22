@@ -25,8 +25,6 @@ function ClientRow({ client }) {
       <td>
         <button className="btn btn-danger" onClick={deleteClient}>
           <div className="d-flex gap-2 align-items-center ">
-            {" "}
-            Remove
             <FaUserTimes />
           </div>
         </button>

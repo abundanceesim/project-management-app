@@ -23,7 +23,7 @@ export default function Clients() {
               <th>Name</th>
               <th>Email</th>
               <th>Phone</th>
-              <th style={{ width: "10%" }}></th>
+              <th style={{ width: "5%" }}>Action</th>
             </tr>
           </thead>
           <tbody>

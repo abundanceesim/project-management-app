@@ -14,14 +14,14 @@ export default function Home() {
       </div>
       <div className="card mt-3">
         <div className="card-body">
-          <h5>PROJECTS</h5>
+          <h5 className="header">PROJECTS</h5>
           <Projects />
         </div>
       </div>
 
       <div className="card mt-3">
         <div className="card-body">
-          <h5>CLIENTS</h5>
+          <h5 className="header">CLIENTS</h5>
           <Clients />
         </div>
       </div>
